@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000; /* Fundo preto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+.logo-container {
+    margin-bottom: 30px;
+}
+
+.logo {
+    max-width: 250px; /* Mantém a logo grande e visível */
+    display: block;
+    margin: 0 auto;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.1); /* Fundo levemente translúcido */
+    padding: 35px;
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2); /* Sombra mais suave */
+    width: 340px;
+    text-align: center;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Garante que tudo fique centralizado */
+}
+
+.login-container:hover {
+    box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.3);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #fff; /* Cor do texto */
+    font-size: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza tudo dentro do formulário */
+    width: 100%;
+}
+
+label {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff; /* Labels em branco */
+}
+
+input {
+    width: 90%; /* Ajusta o tamanho para harmonizar melhor */
+    padding: 12px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    text-align: center;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.7);
+}
+
+button {
+    width: 90%; /* Faz o botão ter o mesmo tamanho dos campos de input */
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+    visibility: hidden; /* Inicialmente oculta */
+}
+
+/* Exibir erro quando houver mensagem */
+.error.show {
+    visibility: visible;
+}

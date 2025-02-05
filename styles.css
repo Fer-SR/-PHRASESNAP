@@ -1,0 +1,164 @@
+/* Fonte Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0; /* Cor de fundo suave */
+}
+
+
+header.topo {
+    background-color: #000; /* Fundo preto */
+    height: auto; /* Ajusta altura dependendo do conteúdo */
+    padding: 20px 30px;
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente */
+    color: white;
+    flex-wrap: wrap; /* Permite a quebra do conteúdo em telas menores */
+}
+
+
+header.topo img {
+    max-width: 15%; /* Ajusta a largura da imagem para caber dentro da área */
+    height: auto;
+    margin-right: 20px;
+}
+
+
+header.topo h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: white;
+    font-weight: 400;
+    text-align: left;
+    margin-left: 20px;
+}
+
+
+/* Menu */
+nav.menu {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+/* Link ao redor do botão */
+.btn-link {
+    text-decoration: none; /* Remove o sublinhado padrão */
+    display: inline-block; /* Garante alinhamento correto */
+}
+
+
+/* Botões globais */
+.btn {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.btn:hover {
+    background-color: #f0f0f0;
+}
+
+
+.btn.copiado {
+    background-color: #28a745; /* Verde */
+    color: white;
+}
+
+
+/* Fundo amarelo */
+.fundo-amarelo {
+    background-color: #f7c744; /* Fundo amarelo */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    justify-content: flex-start;
+}
+
+
+/* Imagem do mouse */
+.imagem-mouse {
+    width: 80%;
+    max-width: 350px;
+    height: auto;
+    margin-bottom: 40px; /* Adiciona mais espaço abaixo da imagem */
+}
+
+
+/* Grid de botões */
+.grid-botoes {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espaçamento entre as colunas */
+    flex-wrap: wrap;
+}
+
+
+/* Coluna de botões */
+.coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaçamento entre os botões na coluna */
+}
+
+
+/* Ajustando os botões para ficarem maiores e com texto adequado */
+.grid-botoes .btn {
+    width: auto; /* Largura automática para os botões */
+    padding: 15px 25px; /* Aumenta o padding para dar mais espaço */
+    font-size: 16px; /* Aumenta o tamanho da fonte */
+    text-align: center;
+    white-space: normal; /* Permite que o texto ocupe várias linhas */
+    line-height: 1.5; /* Aumenta o espaçamento entre as linhas de texto */
+}
+
+
+/* Mensagem "COPIADO" */
+.copiado-message {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #28a745; /* Verde */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    .grid-botoes {
+        flex-direction: column; /* Coloca os botões em uma coluna */
+        align-items: center; /* Centraliza os botões */
+    }
+
+    .grid-botoes .coluna {
+        width: 90%; /* Ajuste a largura das colunas */
+    }
+
+    .grid-botoes .btn {
+        font-size: 14px;
+        padding: 12px 20px; /* Ajusta o tamanho dos botões */
+    }
+}
+
+
