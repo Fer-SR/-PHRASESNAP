@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Definindo as mensagens com frases separadas corretamente
     const mensagens = {
-        "vale-falta-item": `XXXX, bom dia!
+        "AGUARDANDO ESTOQUE": `XXXX, bom dia!
 
 Vi aqui que o seu pedido não foi despachado por não termos o mesmo disponível em nosso estoque, por isso, te atendemos com ativação do voucher no seu cadastro.
 
@@ -22,7 +22,7 @@ Atenciosamente,
 ${nomeUsuario}
 Equipe Backoffice`,
 
-        "vale-ativo": `XXXX, bom dia!
+        "VALE ATIVO": `XXXX, bom dia!
 
 Seu vale compras já está disponível no seu cadastro, agora é só o utilizar.
 
@@ -38,7 +38,7 @@ Atenciosamente,
 ${nomeUsuario}
 Equipe Backoffice`,
 
-        "pedido-liberado": `Olá, XXXX, tudo bem?
+        "RESERVADO PARCIALMENTE": `Olá, XXXX, tudo bem?
 
 Primeiramente, peço desculpas pelo transtorno que essa situação causou para você.
 
@@ -58,7 +58,7 @@ Atenciosamente,
 ${nomeUsuario}
 Time Netshoes`,
 
-        "troca": `XXXX, bom dia! Espero que esteja bem.
+        "TVC LIBERADO": `XXXX, bom dia! Espero que esteja bem.
 
 Identificamos o erro e o mesmo foi corrigido!
 
@@ -72,7 +72,7 @@ Atenciosamente,
 ${nomeUsuario}
 Equipe Netshoes`,
 
-        "rota-devolucao": `Olá, XXXX!
+        "REENVIO": `Olá, XXXX!
 
 Identifiquei que o seu pedido não foi entregue porque o endereço cadastrado não foi localizado pelo transportador, por isso, o mesmo está retornando ao estoque. Peço desculpas pela situação.
 
